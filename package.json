@@ -1,0 +1,14 @@
+{
+  "name": "test-task-da-llc",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/backend",
+    "start": "npm run start --workspace=apps/backend"
+  }
+}
+
