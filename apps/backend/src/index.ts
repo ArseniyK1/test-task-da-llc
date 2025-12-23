@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 3000;
 
 const startServer = async () => {
   try {
-    // Initialize database connection pool
     const pool = await createDatabaseConnection();
     await initializeDatabase(pool);
     console.log("Database initialized");
