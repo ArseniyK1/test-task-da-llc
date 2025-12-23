@@ -1,5 +1,5 @@
 export class FileUploadDto {
-  file: Express.Multer.File;
+  file!: Express.Multer.File;
 }
 
 export class FileListQueryDto {
@@ -8,18 +8,17 @@ export class FileListQueryDto {
 }
 
 export class FileResponseDto {
-  id: number;
-  name: string;
-  extension: string;
-  mimeType: string;
-  size: number;
-  uploadDate: Date;
+  id!: number;
+  name!: string;
+  extension!: string;
+  mimeType?: string;
+  size!: number;
+  uploadDate?: Date;
 }
 
 export class FileListResponseDto {
-  files: FileResponseDto[];
-  page: number;
-  totalPages: number;
-  total: number;
+  files?: FileResponseDto[];
+  page?: number;
+  totalPages?: number;
+  total?: number;
 }
-

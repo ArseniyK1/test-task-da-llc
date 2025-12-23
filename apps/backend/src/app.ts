@@ -19,8 +19,8 @@ export const createApp = () => {
   // ========================= репы =========================
 
   // ========================= сервисы =========================
-  const userService = new UserService(userRepository);
   const authService = new AuthService(authRepository);
+  const userService = new UserService(userRepository, authService);
   const fileService = new FileService(fileRepository);
   // ========================= сервисы =========================
 

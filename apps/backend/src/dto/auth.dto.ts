@@ -1,19 +1,18 @@
 export class SignInDto {
-  id: string;
-  password: string;
+  id?: string;
+  password?: string;
 }
 
 export class SignUpDto {
-  id: string;
-  password: string;
+  id?: string;
+  password?: string;
 }
 
 export class RefreshTokenDto {
-  refreshToken: string;
+  refreshToken?: string;
 }
 
 export class AuthResponseDto {
-  accessToken: string;
-  refreshToken: string;
+  accessToken?: string;
+  refreshToken?: string;
 }
-
